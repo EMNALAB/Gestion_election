@@ -1,0 +1,21 @@
+.log-div{
+    color: #567dd0;
+    border: 1px solid snow;
+    background-color: #3f51b514;
+    text-align: center;
+    margin-left: 25%;
+    margin-top:5% ;
+    width: 50%;
+     
+}
+	.form-control{
+        width: 10%;
+    }
+
+  .mydiv{
+        width: 25%;
+        margin-left: 35%;
+        background-color: #567dd0;
+        padding: 50px;
+        color: white;
+    }
