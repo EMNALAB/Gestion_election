@@ -1,0 +1,52 @@
+.log-div{
+    color: #567dd0;
+    border: 1px solid snow;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-left: 25%;
+    margin-top:5% ;
+    width: 50%;
+     
+}
+.res-div2{background-color: #3f51b514;
+    width: 100%;}
+
+	.form-control{
+        width: 10%;
+    }
+    .menu{
+        background-color: #567dd0;
+        color: white;
+    }
+   .a_link{
+       margin-left: 50px;
+       color: white;
+       text-decoration: none;
+
+       
+   }
+   .select-titre{
+color: #567dd0;
+    margin-top: 15px;
+    text-align: center;
+   }
+   .custom-select{
+    width: 200px;
+    text-align: center;
+    margin-left: 42%;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+   }  
+  .btn{
+    color: #fff;
+    background-color: #567dd0;
+    border-color: #567dd0;
+    border-radius: 7px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 165px;
+  }
+  
