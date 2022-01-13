@@ -27,13 +27,13 @@
 	$myusername = stripslashes($myusername);
 	//$mypassword = stripslashes($encrypted_mypassword);
 
-	$sql=mysqli_query($con, "SELECT * FROM admin_table WHERE email='$myusername' and password='$mypassword'");
+	$sql=pg_query($con, "SELECT * FROM admin_table WHERE email='$myusername' and password='$mypassword'");
 	// Checking table row
-	$count = mysqli_num_rows($sql);
+	$count = pg_num_rows($sql);
 
 	// valid email and password redirect to result page
 	if($count){	
-		$user=mysqli_fetch_assoc($sql); 
+		$user=pg_fetch_assoc($sql); 
 		$_SESSION['admin_id'] = $user['admin_id'];
 	header("location:refresh.php");
 	}

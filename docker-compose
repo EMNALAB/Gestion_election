@@ -5,7 +5,7 @@
       image: php:4-apache
       ports:
         - 80:80
-      volumes:
+      volumes
         ./Election3/:var/www/html
 
     db:
