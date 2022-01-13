@@ -41,7 +41,7 @@
 	else {
 		echo "Le mot de passe entré est incorrect<br><br>Retourner à la <a href=\"index.php\">connexion</a>";
 	}
-  
+  //
 	ob_end_flush();
 ?> 
 <br><br>
