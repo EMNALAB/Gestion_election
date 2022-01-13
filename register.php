@@ -27,14 +27,14 @@
 				$newpass = $myPassword;
 				// Inserting voters data for registration
 				
-				$sql2 = mysqli_query($con, " select * from liste_cin where cin  = '$cin' ");
-				if ( ! $row = mysqli_fetch_array( $sql2 ) ) 
+				$sql2 =pg_query($con, " select * from liste_cin where cin  = '$cin' ");
+				if ( ! $row = pg_fetch_array( $sql2 ) ) 
 				{ 
 					echo ( "<center>Votre cin n'exite pas dans notre base <br><br></center>" );
 				} 
 				else
 				{
-				$sql = mysqli_query($con, "INSERT INTO voters(first_name, last_name, email, password,cin) 
+				$sql = pg_query($con, "INSERT INTO voters(first_name, last_name, email, password,cin) 
 				VALUES ('$myFirstName','$myLastName', '$myEmail', '$newpass', '$cin') ");
 				die( "<center>votre compte est enregistré. <br><br>S'il vous plaît identifiez-vous pour <a href=\"index.php\">voter</a></center>" );
 				}
